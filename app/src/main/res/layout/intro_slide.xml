@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#222222"
+    android:layout_weight="10"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="279dp"
+        android:layout_height="85dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:textColor="#ffffff"
+        android:text="How it works?"
+        android:textSize="28sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:textColor="#ffffff"
+        android:text="1. Put some information about you for example sex, your device, age etc."
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:textColor="#ffffff"
+        android:text="2. Play your video"
+        android:textSize="20sp" />
+
+    <fragment android:name="com.seda.vutbr.feec.youtube.YouTubeFragment"
+        android:id="@+id/youtubeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="161dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:textColor="#ffffff"
+        android:text="3. Evaluate video"
+        android:textSize="20sp" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_gravity="center_horizontal"
+        android:rating="4" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:textColor="#ffffff"
+        android:text="We will store these information and analyze them regarding to your video evaluation. It will help us in research on Quality of Experience "
+        android:textSize="20sp" />
+
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- Fullscreen application theme. -->
+    <style name="FullscreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--TODO add aditional options later -->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+</resources>

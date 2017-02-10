@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.seda.vutbr.feec">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- android:hardwareAccelerated="true" is necessary for WebView -->
+    <application
+        android:hardwareAccelerated="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Test if this is good approach with android:launchMode= singleTask-->
+
+        <activity android:name=".youtube.YouTubeActivity"/>
+
+        <activity android:name=".youtube.WebViewActivity"/>
+
+        <activity
+            android:name=".menu.intro.DefaultIntro"
+            android:label="@string/title_activity_default_intro"
+            android:noHistory="true"
+            android:launchMode="singleTask"
+            android:theme="@style/FullscreenTheme" />
+
+        <activity android:name=".youtube.website.Search"
+            android:screenOrientation="landscape">
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            -->
+        </activity>
+
+        <activity android:name=".youtube.website.Player"
+            android:screenOrientation="landscape" />
+
+        <activity android:name=".menu.settings.MyPreferencesActivity"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="cb1a30c565e3069e82e8e1ceecef849a695d6cc4"/>
+        <!--android:value="@string/FABRIC_KEY"-->
+    </application>
+
+</manifest>
