@@ -11,4 +11,8 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+    <string-array name="gender">
+        <item>muž</item>
+        <item>žena</item>
+    </string-array>
 </resources>

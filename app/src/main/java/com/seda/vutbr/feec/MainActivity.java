@@ -7,9 +7,18 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.app.ListActivity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
 
 import com.seda.vutbr.feec.menu.intro.DefaultIntro;
 import com.seda.vutbr.feec.menu.settings.MyPreferencesActivity;
@@ -28,11 +37,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        playVideoButtonListener();
+        String[] gender = getResources().getStringArray(R.array.gender);
+        //this.setListAdapter(new ArrayAdapter<String>(this, R.layout.activity_main, R.id.textview, gender));
 
         //using iframe
         playVideoWebViewButton();
+
+        //using android video
+        //playVideoButtonListener();
 
     }
 
@@ -47,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /*
     public void playVideoButtonListener(){
         playVideo = (Button) findViewById(R.id.playVideoButton);
         playVideo.setOnClickListener(new View.OnClickListener() {
@@ -55,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), YouTubeActivity.class));
             }
         });
-    }
+    }*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -68,8 +81,6 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch(item.getItemId()){
             case R.id.add:
-                return(true);
-            case R.id.reset:
                 return(true);
             case R.id.start_intro:
                 Intent intent = new Intent(this, DefaultIntro.class);

@@ -26,4 +26,9 @@
 
     <string name="search">Search</string>
     <string name="failed">Failed to initialize Youtube Player</string>
+
+    <string name="emailAddress">Vepište svoji emailovou adresu</string>
+    <string name="age">Vepište svůj věk</string>
+    <string name="gender">Vepište svoje pohlaví</string>
+    <string name="education">Dosažené vzdělání</string>
 </resources>
