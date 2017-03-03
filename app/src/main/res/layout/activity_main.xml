@@ -113,10 +113,25 @@
             android:id="@+id/education"/>
 
         <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="9dp"
+            android:padding="10dip"
+            android:textSize="16dip"
+            android:textStyle="bold">
+        </TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:ems="10"
+            android:hint="@string/userConnection"
+            android:id="@+id/userConnection"/>
+
+        <TextView
             android:text=""
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView2"
             android:layout_weight="0.49" />
 
         <Button

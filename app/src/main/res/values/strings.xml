@@ -31,4 +31,5 @@
     <string name="age">Vepište svůj věk</string>
     <string name="gender">Vepište svoje pohlaví</string>
     <string name="education">Dosažené vzdělání</string>
+    <string name="userConnection">Typ připojení k internetu</string>
 </resources>

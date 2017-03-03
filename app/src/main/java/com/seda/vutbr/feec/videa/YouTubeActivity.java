@@ -1,4 +1,4 @@
-package com.seda.vutbr.feec.youtube;
+package com.seda.vutbr.feec.videa;
 
 import android.content.Intent;
 import android.os.Bundle;

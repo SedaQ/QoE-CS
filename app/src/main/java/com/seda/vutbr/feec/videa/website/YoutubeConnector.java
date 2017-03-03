@@ -1,4 +1,4 @@
-package com.seda.vutbr.feec.youtube.website;
+package com.seda.vutbr.feec.videa.website;
 
 import android.content.Context;
 import android.util.Log;

@@ -20,9 +20,9 @@
         </activity>
         <!-- Test if this is good approach with android:launchMode= singleTask-->
 
-        <activity android:name=".youtube.YouTubeActivity"/>
+        <activity android:name=".videa.YouTubeActivity"/>
 
-        <activity android:name=".youtube.WebViewActivity"/>
+        <activity android:name=".videa.WebViewActivity"/>
 
         <activity
             android:name=".menu.intro.DefaultIntro"
@@ -31,7 +31,7 @@
             android:launchMode="singleTask"
             android:theme="@style/FullscreenTheme" />
 
-        <activity android:name=".youtube.website.Search"
+        <activity android:name=".videa.website.Search"
             android:screenOrientation="landscape">
             <!--
             <intent-filter>
@@ -41,7 +41,7 @@
             -->
         </activity>
 
-        <activity android:name=".youtube.website.Player"
+        <activity android:name=".videa.website.Player"
             android:screenOrientation="landscape" />
 
         <activity android:name=".menu.settings.MyPreferencesActivity"/>

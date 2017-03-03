@@ -1,4 +1,4 @@
-package com.seda.vutbr.feec.youtube.website;
+package com.seda.vutbr.feec.videa.website;
 
 import android.os.Bundle;
 import android.util.Log;

@@ -34,7 +34,7 @@
         android:text="2. Play your video"
         android:textSize="20sp" />
 
-    <fragment android:name="com.seda.vutbr.feec.youtube.YouTubeFragment"
+    <fragment android:name="com.seda.vutbr.feec.videa.YouTubeFragment"
         android:id="@+id/youtubeFragment"
         android:layout_width="match_parent"
         android:layout_height="161dp" />

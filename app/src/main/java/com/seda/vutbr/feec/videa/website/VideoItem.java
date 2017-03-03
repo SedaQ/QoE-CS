@@ -1,4 +1,4 @@
-package com.seda.vutbr.feec.youtube.website;
+package com.seda.vutbr.feec.videa.website;
 
 /**
  * Created by Seda on 10/20/2016.

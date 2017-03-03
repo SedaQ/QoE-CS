@@ -1,4 +1,4 @@
-package com.seda.vutbr.feec.youtube;
+package com.seda.vutbr.feec.videa;
 
 import android.os.Bundle;
 import android.widget.Toast;
